@@ -1,4 +1,4 @@
-let projects = Vue.component('projects', {
+let teams = Vue.component('teams', {
     props: ["projects"],
     data: function () {
         return {
@@ -8,7 +8,7 @@ let projects = Vue.component('projects', {
 	
 	`
     <div>
-    {{ $route.params.id }}
+        how fucking fun
 	</div>
     `
 })

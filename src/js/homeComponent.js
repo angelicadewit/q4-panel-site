@@ -1,5 +1,5 @@
 let home = Vue.component('home', {
-    props: ["projects"],
+    props: ["teams", "vuejs", "node"],
     data: function () {
         return {
         }
@@ -16,14 +16,27 @@ let home = Vue.component('home', {
         <p>Here is a collection of what I worked on for the past few months</p>
         
         <ul>
-        <li v-for="project in projects">
-            {{project.name}}<br>
-            <router-link to="/project">
-                <div class="img-size"><img :src="project.thumbnail"></div>
+        <li>
+            {{teams.name}}
+            <router-link to="/teams">
+                <div class="img-size"><img :src="teams.thumbnail"></div>
             </router-link>
-
         </li>
-    </ul>
+
+        <li>
+            {{node.name}}
+            <router-link to="/teams">
+                <div class="img-size"><img :src="node.thumbnail"></div>
+            </router-link>
+        </li>
+
+        <li>
+            {{vuejs.name}}
+            <router-link to="/teams">
+                <div class="img-size"><img :src="vuejs.thumbnail"></div>
+            </router-link>
+        </li>
+        </ul>
 	</div>
     `
 })

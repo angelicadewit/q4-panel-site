@@ -1,6 +1,8 @@
 "use strict";
 
 var projects = [{
+    id: 1,
+    param: "KR",
     name: "KR Steakhouse",
     class: "teams",
     description: "A redesign of a restaurant, KR steakbar, this was collaborated with <a href=\"http://carolehreth.com\" target=\"_blank\">Carol Ehreth</a> and <a href=\"devtheuniverse.com target=\"_blank\">Ashley Pollard</a>",
@@ -8,7 +10,10 @@ var projects = [{
     github: "https://github.com/ashpollard11/teams-2/",
     link: "krsteakbar.html",
     img: "dist/img/krsteakbar.png"
+
 }, {
+    id: 2,
+    param: "sami",
     name: "Talk To Sami",
     class: "Node",
     description: "A user-submitted letter writing site to talk to Sami - a magical cat who will listen to you",
@@ -17,6 +22,8 @@ var projects = [{
     link: "node.html",
     img: "dist/img/talktosami.png"
 }, {
+    id: 3,
+    param: "sheetfaced",
     name: "Let's Get Sheetfaced",
     class: "Vue",
     description: "An information site geared towards users who are interested in started an Asian Beauty routine",
