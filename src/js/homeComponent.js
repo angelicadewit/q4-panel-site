@@ -18,7 +18,7 @@ let home = Vue.component('home', {
         <ul>
         <li v-for="project in projects">
             {{project.name}}<br>
-            <router-link :to="{ name: 'project'}">
+            <router-link to="/project">
                 <div class="img-size"><img :src="project.thumbnail"></div>
             </router-link>
 

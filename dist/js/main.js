@@ -1,7 +1,7 @@
 'use strict';
 
 var router = new VueRouter({
-	routes: [{ path: '/', component: home }, { path: '/projects/:name', component: project, props: true }],
+	routes: [{ path: '/', component: home }, { path: '/project/', component: project, props: true }],
 	linkActiveClass: "active",
 	linkExactActiveClass: "exact-active"
 });
