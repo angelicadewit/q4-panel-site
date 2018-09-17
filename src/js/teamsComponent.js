@@ -9,7 +9,7 @@ let teams = Vue.component('teams', {
     `
     <div>
         <h2>{{teams.name}}</h2>
-        <div class="page-ul">
+        <div class="page">
             <div class="full-page"><img :src="teams.img"></div>
             <div class="content">
                 <p><span>Class:</span></span> {{teams.class}}</p>

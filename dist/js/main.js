@@ -1,7 +1,7 @@
 'use strict';
 
 var router = new VueRouter({
-    routes: [{ path: '/', component: home }, { path: '/teams', component: teams }],
+    routes: [{ path: '/', component: home }, { path: '/teams', component: teams }, { path: '/node', component: node }, { path: '/vuejs', component: vuejs }],
     linkActiveClass: "active",
     linkExactActiveClass: "exact-active"
 });

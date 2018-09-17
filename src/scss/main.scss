@@ -117,7 +117,7 @@ h1{
 	font-size: 1.25em;
 
 	@include tablet{
-		height: 500px;
+		min-height: 500px;
 		padding: 50px;
 	}
 
@@ -165,7 +165,7 @@ h1{
 		}
 	}
 
-	.page-ul{
+	.page{
 		font-family: $bodyCopy;
 
 		@include tablet{
@@ -173,13 +173,15 @@ h1{
 			justify-content: space-around;
 		}
 
+		&.links{
+			@include desktop{
+				padding-top: 30px;
+			}
+		}
+
 		li{
 			padding-top: 15px;
 			color:#566D7D;
-		}
-
-		@include desktop{
-			padding-top: 30px;
 		}
 	}
 

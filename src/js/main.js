@@ -2,6 +2,8 @@ const router = new VueRouter({
 	routes: [
     { path: '/', component: home },
     { path: '/teams', component: teams},
+    { path: '/node', component: node},
+    { path: '/vuejs', component: vuejs},
     // { path: '/projects/:id', name: 'projects', component: projects, props: true } 
 	],
 	linkActiveClass: "active",	

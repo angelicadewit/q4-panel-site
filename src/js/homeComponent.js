@@ -15,7 +15,7 @@ let home = Vue.component('home', {
         <p>Buzzfeed described me as a combo of McGonagall and Daenerys</p>
         <p>Here is a collection of what I worked on for the past few months:</p>
         
-        <ul class="page-ul">
+        <ul class="page links">
         <li>
             Project: {{teams.name}}
             <router-link to="/teams">

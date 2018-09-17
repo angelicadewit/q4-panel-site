@@ -145,7 +145,7 @@ h1 a {
 
 @media only screen and (min-width: 640px) {
 	#app {
-		height: 500px;
+		min-height: 500px;
 		padding: 50px;
 	}
 }
@@ -199,26 +199,26 @@ h1 a {
 	width: 100%;
 }
 
-#app .page-ul {
+#app .page {
 	font-family: "henriette";
 }
 
 @media only screen and (min-width: 640px) {
-	#app .page-ul {
+	#app .page {
 		display: flex;
 		justify-content: space-around;
 	}
 }
 
-#app .page-ul li {
-	padding-top: 15px;
-	color: #566D7D;
-}
-
 @media only screen and (min-width: 800px) {
-	#app .page-ul {
+	#app .page.links {
 		padding-top: 30px;
 	}
+}
+
+#app .page li {
+	padding-top: 15px;
+	color: #566D7D;
 }
 
 #app .content {
