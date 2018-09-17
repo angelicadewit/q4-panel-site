@@ -1,6 +1,7 @@
 const router = new VueRouter({
 	routes: [
-	{ path: '/', component: home },
+    { path: '/', component: home },
+    { path: '/teams', component: teams},
     // { path: '/projects/:id', name: 'projects', component: projects, props: true } 
 	],
 	linkActiveClass: "active",	
@@ -18,7 +19,7 @@ var app = new Vue({
             param: "KR",
             name: "KR Steakhouse",
             class: `teams`,
-            description: `A redesign of a restaurant, KR steakbar, this was collaborated with <a href="http://carolehreth.com" target="_blank">Carol Ehreth</a> and <a href="devtheuniverse.com target="_blank">Ashley Pollard</a>`,
+            description: `Collaborated with Carol Ehreth and Ashley Pollard, this featured a complete redesign of KR Steakhouse restaurant`,
             thumbnail: `dist/img/krsteakbarthumb.png`,
             github: `https://github.com/ashpollard11/teams-2/`,
             link: `krsteakbar.html`,

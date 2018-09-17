@@ -52,6 +52,7 @@ $headerCopy: "adorn-smooth-pomander";
 
 body {
 	background: url(../img/background.jpeg) no-repeat;
+	background-color: #AFC4CF;
 	background-size: cover;
 	background-position-x: -300px;
 	
@@ -87,7 +88,7 @@ h1{
 	font-size: 7em;
 	position: relative;
 	text-align: right;
-	padding: 40px 40px 0px;
+	padding: 40px 40px 0px;	
 
 	a{
 		color: #566D7D;
@@ -111,32 +112,72 @@ h1{
 	align-self: center;
 	justify-content: center;
 	border-radius: 25px;
-	padding: 50px;
+	padding: 30px;
+	font-size: 1.25em;
 
 	@include tablet{
 		height: 500px;
+		padding: 50px;
 	}
 
-	@include desktop{
+	@include bigger-desktop{
 		width: 1000px;
+	}
+
+	.content{
+		width: 95%;
+		margin: auto;
 	}
 
 	h2{
 		font-family: $headerCopy;
-		font-size: 5em;
+		font-size: 6em;
 	}
 
 	p{
 		font-family: $bodyCopy;
-		font-size: 1.25em;
 		line-height: 1.2em;
 	}
 
 	.img-size{
-		width: 200px;
+		width: 175px;
 
 		img{
 			width: 100%;
 		}
+	}
+
+	.full-page{
+		width: 100%;
+
+		@include desktop{
+			width: 100%;
+		}
+
+		img{
+			width: 100%;
+		}
+	}
+
+	.page-ul{
+		font-family: $bodyCopy;
+
+		@include tablet{
+			display: flex;
+			justify-content: space-around;
+		}
+
+		li{
+			padding-top: 15px;
+			color:#566D7D;
+		}
+
+		@include desktop{
+			padding-top: 30px;
+		}
+	}
+
+	.content{
+		margin-left: 30px;
 	}
 }
