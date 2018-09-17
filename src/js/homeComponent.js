@@ -17,22 +17,23 @@ let home = Vue.component('home', {
         
         <ul class="page links">
         <li>
-            Project: {{teams.name}}
-            <router-link to="/teams">
+            <router-link to="/teams" class="project-links">
+                <h3>Project: {{teams.name}}</h3>
                 <div class="img-size"><img :src="teams.thumbnail"></div>
             </router-link>
         </li>
 
         <li>
-            Project: {{node.name}}
-            <router-link to="/node">
+            
+            <router-link to="/node" class="project-links">
+                <h3 >Project: {{node.name}}</h3>
                 <div class="img-size"><img :src="node.thumbnail"></div>
             </router-link>
         </li>
 
         <li>
-            Project: {{vuejs.name}}
-            <router-link to="/vuejs">
+            <router-link to="/vuejs" class="project-links">
+                <h3>Project: {{vuejs.name}}</h3>
                 <div class="img-size"><img :src="vuejs.thumbnail"></div>
             </router-link>
         </li>

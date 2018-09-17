@@ -55,6 +55,7 @@ body {
 	background-color: #AFC4CF;
 	background-size: cover;
 	background-position-x: -300px;
+	background-attachment: fixed;
 	
 	
 	width: 100%;
@@ -125,6 +126,7 @@ h1{
 		width: 1000px;
 	}
 
+
 	.content{
 		width: 95%;
 		margin: auto;
@@ -133,6 +135,20 @@ h1{
 	h2{
 		font-family: $headerCopy;
 		font-size: 6em;
+		text-shadow: -1px 2px #CDCDCF, 2px 1px #CDCDCF, 1px 2px #CDCDCF, 2px -1px #CDCDCF;	
+	}
+	
+	.project-links{
+		font-family: $bodyCopy;
+		font-size: 1.5em;
+		text-decoration: none;
+		color: #566D7D;
+		transition: .2s;
+
+		&:hover{
+			color: #9B7A5F;
+			text-decoration: underline;
+		}
 	}
 
 	p{
@@ -204,7 +220,8 @@ h1{
 			&:hover{
 				background: #9B7A5F;
 				color: #AFC4CF;
-				border: 1px solid #AFC4CF
+				border: 1px solid #AFC4CF;
+				text-transform: uppercase;
 			}
 		}
 		
@@ -216,7 +233,10 @@ h1{
 
 			&:hover{
 				color: black;
+				text-transform: uppercase;
 			}
 		}
 	}
 }
+
+
