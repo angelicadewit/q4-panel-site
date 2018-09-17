@@ -1,0 +1,138 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+@import url("https://use.typekit.net/eho4qol.css");
+
+$tablet-breakpoint: 640px;
+$desktop-breakpoint: 800px;
+$bigger-desktop-breakpoint: 1400px;
+
+
+@mixin tablet{
+	@media only screen and (min-width: $tablet-breakpoint){
+		@content;
+	}
+}
+
+@mixin desktop{
+	@media only screen and (min-width: $desktop-breakpoint){
+		@content;
+	}
+}
+
+@mixin bigger-desktop{
+	@media only screen and (min-width: $bigger-desktop-breakpoint){
+		@content;
+	}
+}
+
+$bodyCopy: "henriette";
+$headerCopy: "adorn-smooth-pomander";
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url(../img/background.jpeg) no-repeat;
+	background-size: cover;
+	background-position-x: -300px;
+	
+	
+	width: 100%;
+	height: 100vh;
+	
+	@include tablet{
+		background-position-x: -100px;
+	}
+
+	@include desktop{
+		background-position-x: 0px;
+	}
+
+	@include bigger-desktop{
+		background-position-y: -60px;
+	}
+}
+
+
+
+
+/* 2. Content ================================= */
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+h1{
+	font-family: $headerCopy;
+	font-size: 7em;
+	position: relative;
+	text-align: right;
+	padding: 40px 40px 0px;
+	color: #566D7D;
+	text-shadow: -1px 2px white, 2px 1px white, 1px 2px white, 2px -1px white;
+
+
+	@include tablet{
+		font-size: 10em;
+	}
+
+	@include bigger-desktop{
+		font-size: 15em;
+	}
+}
+
+#app{
+	width: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	align-self: center;
+	justify-content: center;
+	border-radius: 25px;
+	padding: 50px;
+
+	@include tablet{
+		height: 500px;
+	}
+
+	@include desktop{
+		width: 1000px;
+	}
+
+	h2{
+		font-family: $headerCopy;
+		font-size: 5em;
+	}
+
+	p{
+		font-family: $bodyCopy;
+		font-size: 1.25em;
+		line-height: 1.2em;
+	}
+
+	.img-size{
+		width: 200px;
+
+		img{
+			width: 100%;
+		}
+	}
+}
