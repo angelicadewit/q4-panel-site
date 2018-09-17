@@ -12,12 +12,12 @@ let teams = Vue.component('teams', {
         <div class="page-ul">
             <div class="full-page"><img :src="teams.img"></div>
             <div class="content">
-                <p>Class: {{teams.class}}</p>
-                <p>Description: {{teams.description}}</p>
-                <p>Link: <a :href="teams.link">Click Here</a></p>
-                <p>Github Repo: <a :href="teams.github">Click Here</a></p>
-                <router-link to="/">
-                    Go Back
+                <p><span>Class:</span></span> {{teams.class}}</p>
+                <p><span>Description:</span> {{teams.description}}</p>
+                <p><span>Link:</span> <a :href="teams.link" class="source-links">Click Here</a></p>
+                <p><span>Github Repo:</span> <a :href="teams.github" class="source-links">Click Here</a></p>
+                <router-link to="/" class="back">
+                    <p>Back to home</p>
                 </router-link>
             </div>
             

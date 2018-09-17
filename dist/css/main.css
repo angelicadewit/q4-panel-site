@@ -104,6 +104,7 @@ body {
 .wrapper {
 	display: flex;
 	flex-direction: column;
+	transition: 2s;
 }
 
 h1 {
@@ -184,6 +185,12 @@ h1 a {
 
 @media only screen and (min-width: 800px) {
 	#app .full-page {
+		width: 60%;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+	#app .full-page {
 		width: 100%;
 	}
 }
@@ -216,6 +223,37 @@ h1 a {
 
 #app .content {
 	margin-left: 30px;
+}
+
+#app .content p {
+	line-height: 1.25em;
+}
+
+#app .content p span {
+	text-decoration: underline;
+}
+
+#app .content .source-links {
+	text-decoration: none;
+	color: #9B7A5F;
+	transition: .2s;
+}
+
+#app .content .source-links:hover {
+	background: #9B7A5F;
+	color: #AFC4CF;
+	border: 1px solid #AFC4CF;
+}
+
+#app .content .back {
+	text-align: right;
+	padding: 20px;
+	color: #9B7A5F;
+	text-decoration: none;
+}
+
+#app .content .back:hover {
+	color: black;
 }
 
 /*# sourceMappingURL=main.css.map */
